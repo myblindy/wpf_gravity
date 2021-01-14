@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gravity", "gravity\gravity.csproj", "{96AB5378-0AF7-4EDF-B345-1B824E208205}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96AB5378-0AF7-4EDF-B345-1B824E208205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96AB5378-0AF7-4EDF-B345-1B824E208205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96AB5378-0AF7-4EDF-B345-1B824E208205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96AB5378-0AF7-4EDF-B345-1B824E208205}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73A7A5ED-FAAA-48A3-9B43-7F9626504821}
+	EndGlobalSection
+EndGlobal

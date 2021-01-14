@@ -1,0 +1,29 @@
+﻿<Window x:Class="gravity.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gravity"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800" ResizeMode="CanMinimize">
+    <ItemsControl ItemsSource="{Binding Buttons}">
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <Canvas/>
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+        <ItemsControl.ItemTemplate>
+            <DataTemplate>
+                <Button Width="{Binding Width}" Height="{Binding Height}" Content="{Binding Text}" Command="{Binding ActivateGravityCommand}"
+                        RenderTransformOrigin="0.5, 0.5">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="{Binding Angle}" CenterX=".5" CenterY=".5"/>
+                            <TranslateTransform X="{Binding X}" Y="{Binding Y}"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                </Button>
+            </DataTemplate>
+        </ItemsControl.ItemTemplate>
+    </ItemsControl>
+</Window>
